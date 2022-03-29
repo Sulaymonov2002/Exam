@@ -1,0 +1,141 @@
+.choose {
+  padding-top: 12rem;
+  .choose-content {
+    @include d-flex(center, center, column);
+    gap: 1.5rem;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+      color: #444b51;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 2.6rem;
+      color: #444b51;
+    }
+  }
+  .choose-grids {
+    padding-top: 8rem;
+    @include grid(360px);
+    place-items: center;
+
+    .choose-grid-1 {
+      background: #fff3eb;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-2 {
+      background: #ecedff;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-3 {
+      background: #ffecf1;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-4 {
+      background: #f7f7f7;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-5 {
+      background: #fffaec;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-6 {
+      background: #fff3eb;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-7 {
+      background: #eefff3;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-8 {
+      background: #ffecf1;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+    .choose-grid-9 {
+      background: #ecedff;
+      border-radius: 1.6rem;
+      @include d-flex(space-between, center, column);
+      gap: 0.8rem;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+  }
+}
+
+.ambasador {
+  padding-top: 10rem;
+  @include flex-wrap;
+  gap: 3rem;
+
+  .ambasador-image {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+    }
+  }
+  .ambasador-content {
+    flex: 1 1 65rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1 {
+      font-size: 40px;
+      line-height: 120%;
+      color: #444b51;
+    }
+    h3 {
+      font-size: 18px;
+      line-height: 26px;
+      color: #444b51;
+    }
+    .btn {
+      button {
+        padding: 1rem 3rem;
+        background: $main-color;
+        border-radius: 25px;
+        a {
+          color: #fff;
+        }
+        &:hover{
+            border: 2px solid $main-color;
+            background: #fff;
+            a{
+                color: $main-color;
+            }
+        }
+      }
+    }
+  }
+}

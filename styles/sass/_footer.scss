@@ -1,0 +1,77 @@
+.pink1 {
+  @include d-flex(center, center, column);
+  background-color: rgb(253, 213, 220);
+  background-image: url(../../images/pink/pink.png);
+  border: 1px solid #e24329;
+  border-radius: 24px;
+  padding: 8rem 0;
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  button {
+    @include btn;
+    background-color: #fff;
+    color: $main-color;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+  }
+}
+
+.appbg {
+  background-color: antiquewhite;
+}
+.app {
+  @include d-flex;
+  &__text {
+    flex: 1 1 42rem;
+    h1 {
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 120%;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 26px;
+      padding: 2rem 0;
+    }
+    &__number {
+      @include d-flex(start);
+      gap: 2rem;
+
+      h1 {
+        width: 5rem;
+        height: 5rem;
+        font-size: 2rem;
+        @include d-flex;
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 110rem;
+      }
+    }
+    .appAp {
+      padding: 2rem 0;
+      @include d-flex(start);
+      gap: 3rem;
+      img:hover {
+        box-shadow: 0px 22px 40px rgba(134, 72, 156, 0.1),
+          0px 8.47407px 12.7407px rgba(142, 108, 154, 0.0607407),
+          0px 1.79259px 3.25926px rgba(142, 108, 154, 0.0392593);
+      }
+    }
+  }
+  &__photo {
+    flex: 1 1 42rem;
+    img {
+      width: 100%;
+    }
+  }
+}

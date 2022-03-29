@@ -1,0 +1,41 @@
+.question {
+  .question-content {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .accordion {
+    padding-top: 5rem;
+    .accordion-header {
+      .accordion-button {
+        font-size: 18px;
+        line-height: 26px;
+        color: #444b51;
+      }
+    }
+  }
+}
+
+.clients {
+  display: grid;
+
+  padding-top: 6rem;
+  .clients-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 40px;
+      line-height: 120%;
+      color: #444b51;
+    }
+  }
+  .clients-brand {
+    padding-top: 6rem;
+    @include grid(150px);
+  }
+}
+
+
